@@ -1,6 +1,8 @@
 [submodule "voicevista-back"]
 	path = voicevista-back
-	url = https://github.com/SmileSourceHub/voicevista-back
+	url = https://github.com/SmileSourceHub/voicevista-back.git
+	branch = main
 [submodule "voicevista-front"]
 	path = voicevista-front
-	url = https://github.com/SmileSourceHub/voicevista-front
+	url = https://github.com/SmileSourceHub/voicevista-front.git
+	branch = main
