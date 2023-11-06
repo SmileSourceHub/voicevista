@@ -1,0 +1,6 @@
+[submodule "voicevista-back"]
+	path = voicevista-back
+	url = https://github.com/SmileSourceHub/voicevista-back
+[submodule "voicevista-front"]
+	path = voicevista-front
+	url = https://github.com/SmileSourceHub/voicevista-front

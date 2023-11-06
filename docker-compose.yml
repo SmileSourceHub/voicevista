@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  voicevista-back:
+    container_name: voicevista-back
+    build:
+      context: ./voicevista-back
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:80
+  voicevista-front:
+    container_name: voicevista-front
+    build:
+      context: ./voicevista-front
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app/next-app
+    restart: always
+    ports:
+      - 3000:3000
