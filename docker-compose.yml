@@ -7,31 +7,31 @@ services:
   #     dockerfile: ./Dockerfile
   #   ports:
   #     - 5000:80
-  voicevista-front:
-    container_name: voicevista-front
-    build:
-      context: ./voicevista-front
-      dockerfile: ./Dockerfile
-    volumes:
-      - .:/app
-      - /app/node_modules
-    restart: always
-    ports:
-      - 3000:3000
+  # voicevista-front:
+  #   container_name: voicevista-front
+  #   build:
+  #     context: ./voicevista-front
+  #     dockerfile: ./Dockerfile
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
+  #   restart: always
+  #   ports:
+  #     - 3000:3000
   cassandra-db:
     image: cassandra:latest
     ports:
       - 9042:9042
-  cassandra-web:
-    image: ipushc/cassandra-web
-    depends_on:
-    - cassandra-db
-    links: 
-    - cassandra-db
-    environment:
-      CASSANDRA_HOST: cassandra-db
-      CASSANDRA_PORT: 9042
-      CASSANDRA_USERNAME: cassandra
-      CASSANDRA_PASSWORD: cassandra
-    ports:
-      - 3001:8083
+  # cassandra-web:
+  #   image: ipushc/cassandra-web
+  #   depends_on:
+  #   - cassandra-db
+  #   links: 
+  #   - cassandra-db
+  #   environment:
+  #     CASSANDRA_HOST: localhost
+  #     CASSANDRA_PORT: 9042
+  #     CASSANDRA_USERNAME: cassandra
+  #     CASSANDRA_PASSWORD: cassandra
+  #   ports:
+  #     - 3001:8083
