@@ -6,3 +6,7 @@
 	path = voicevista-front
 	url = https://github.com/SmileSourceHub/voicevista-front.git
 	branch = main
+[submodule "voicevista-cassandra"]
+	path = voicevista-cassandra
+	url = https://github.com/SmileSourceHub/voicevista-cassandra.git
+	branch = main
